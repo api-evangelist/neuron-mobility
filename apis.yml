@@ -1,7 +1,15 @@
 aid: neuron-mobility
 name: Neuron Mobility
-description: Neuron Mobility is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Neuron Mobility is a rental e-scooter and e-bike operator and micromobility
+  technology developer running shared micromobility fleets in cities across Australia,
+  the United Kingdom, and Canada. The company designs its own vehicles (including the
+  N3 e-scooter), safety systems such as its patented Helmet Lock and ScootSafe rider
+  training program, and the backend fleet-management, IoT, and geofencing technology
+  that powers its rider apps and city operations. Backed by 500 Global, Neuron was
+  surfaced as a portfolio-company lead and profiled in the API Evangelist network.
+  As of this enrichment pass the company publishes no first-party developer API, GBFS
+  data feed, or well-known discovery surface on its own domain; this profile captures
+  its public web, legal, and support properties plus a live domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/neuron-mobility/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.rideneuron.com/wp-content/uploads/2020/06/Neuron-page-banner-1024x576.png
 tags:
 - Company
+- Micromobility
+- E-Scooter
+- E-Bike
+- Transportation
+- Shared Mobility
+- IoT
+- Smart Cities
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/neuron-mobility-domain-security.yml
 - type: Website
   url: https://rideneuron.com
+- type: Blog
+  url: https://www.rideneuron.com/news/
+- type: Support
+  url: https://support.rideneuron.com/hc/en-us
+- type: TermsOfService
+  url: https://www.rideneuron.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.rideneuron.com/privacy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
